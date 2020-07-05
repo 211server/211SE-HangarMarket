@@ -1,4 +1,4 @@
-﻿﻿# HangarMarket
+﻿# HangarMarket
 A Space Engineers mod.
 
 Workshop link: 

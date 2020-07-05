@@ -197,16 +197,16 @@ namespace HangarStoreMod
                     //FactionTag = "N/A";
                 }
 
-                arg2.AppendLine("_______•°•(Hangar Market)•°•_______");
-                arg2.AppendLine("Grid Name: " + SelectedGrid.Name);
+                arg2.AppendLine("_______•°•(飞船市场)•°•_______");
+                arg2.AppendLine("网格名称: " + SelectedGrid.Name);
                 arg2.AppendLine();
-                arg2.AppendLine("Seller: " + SelectedGrid.Seller);
-                arg2.AppendLine("Seller Faction: " + SelectedGrid.SellerFaction);
-                arg2.AppendLine("Seller Price: " + SelectedGrid.Price + " [sc]");
-                arg2.AppendLine("Estimated Value: " + SelectedGrid.MarketValue + " [sc]");
+                arg2.AppendLine("卖家: " + SelectedGrid.Seller);
+                arg2.AppendLine("卖家阵营: " + SelectedGrid.SellerFaction);
+                arg2.AppendLine("卖家定价: " + SelectedGrid.Price + " [sc]");
+                arg2.AppendLine("估算价值: " + SelectedGrid.MarketValue + " [sc]");
                 arg2.AppendLine();
                 arg2.AppendLine("•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°");
-                arg2.AppendLine("Description: " + SelectedGrid.Description);
+                arg2.AppendLine("描述: " + SelectedGrid.Description);
             }
             else
             {
@@ -517,18 +517,18 @@ namespace HangarStoreMod
             stringBuilder.AppendLine();
             stringBuilder.AppendLine();
 
-            stringBuilder.AppendLine("__________•°•[ Ship Properties ]•°•__________");
-            stringBuilder.AppendLine("GridMass: " + SelectedGrid.GridMass + "kg");
-            stringBuilder.AppendLine("Num of Small Grids: " + SelectedGrid.SmallGrids);
-            stringBuilder.AppendLine("Num of Large Grids: " + SelectedGrid.LargeGrids);
-            stringBuilder.AppendLine("Max Power Output: " + SelectedGrid.MaxPowerOutput);
-            stringBuilder.AppendLine("Build Percentage: " + Math.Round(SelectedGrid.GridBuiltPercent * 100, 2) + "%");
-            stringBuilder.AppendLine("Max Jump Distance: " + SelectedGrid.JumpDistance);
-            stringBuilder.AppendLine("Ship PCU: " + SelectedGrid.PCU);
+            stringBuilder.AppendLine("__________•°•[飞船属性]•°•__________");
+            stringBuilder.AppendLine("网格质量: " + SelectedGrid.GridMass + "kg");
+            stringBuilder.AppendLine("小网格数量: " + SelectedGrid.SmallGrids);
+            stringBuilder.AppendLine("大网格数量: " + SelectedGrid.LargeGrids);
+            stringBuilder.AppendLine("最大输出功率: " + SelectedGrid.MaxPowerOutput);
+            stringBuilder.AppendLine("建造百分比: " + Math.Round(SelectedGrid.GridBuiltPercent * 100, 2) + "%");
+            stringBuilder.AppendLine("最大跃迁距离: " + SelectedGrid.JumpDistance);
+            stringBuilder.AppendLine("飞船 PCU: " + SelectedGrid.PCU);
             stringBuilder.AppendLine();
             stringBuilder.AppendLine();
 
-            stringBuilder.AppendLine("__________•°•[ Block Count ]•°•__________");
+            stringBuilder.AppendLine("__________•°•[方块数量]•°•__________");
             foreach (KeyValuePair<string, int> pair in SelectedGrid.BlockTypeCount)
             {
                 stringBuilder.AppendLine(pair.Key + ": " + pair.Value);

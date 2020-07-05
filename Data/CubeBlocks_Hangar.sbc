@@ -11,8 +11,8 @@
         <SubtypeId>HangarStoreBlock</SubtypeId>
       </Id>
       <Icon>Textures\GUI\Console.dds</Icon>
-      <DisplayName>Hangar Market</DisplayName>
-      <Description>Allows the buying and selling of player made ships</Description>
+      <DisplayName>飞船市场</DisplayName>
+      <Description>提供购买其他玩家建造的飞船的功能</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />

@@ -44,7 +44,7 @@ namespace HangarStoreMod
 
 
             var SaleList = MyAPIGateway.TerminalControls.CreateControl<IMyTerminalControlListbox, IMyProjector>("HangerStoreNext");
-            SaleList.Title = MyStringId.GetOrCompute("Grids for sale: ");
+            SaleList.Title = MyStringId.GetOrCompute("出售中的网格: ");
             SaleList.SupportsMultipleBlocks = false;
             SaleList.VisibleRowsCount = 12;
             SaleList.Multiselect = false;
@@ -58,8 +58,8 @@ namespace HangarStoreMod
 
 
             var PreviewButton = MyAPIGateway.TerminalControls.CreateControl<IMyTerminalControlButton, IMyProjector>("PreviewButton");
-            PreviewButton.Title = MyStringId.GetOrCompute("Preview Selected Grid");
-            PreviewButton.Tooltip = MyStringId.GetOrCompute("Previews the selected Grid");
+            PreviewButton.Title = MyStringId.GetOrCompute("预览所选网格");
+            PreviewButton.Tooltip = MyStringId.GetOrCompute("预览所选网格");
             PreviewButton.SupportsMultipleBlocks = false;
             PreviewButton.Action = Block => ModCore.PreviewSelectedGrid(Block);
             PreviewButton.Enabled = Block => ModCore.PreviewButtonVisibility(block);
@@ -71,8 +71,8 @@ namespace HangarStoreMod
 
 
             var DetailsButton = MyAPIGateway.TerminalControls.CreateControl<IMyTerminalControlButton, IMyProjector>("Ship Details");
-            DetailsButton.Title = MyStringId.GetOrCompute("Selected Grid Details");
-            DetailsButton.Tooltip = MyStringId.GetOrCompute("Provides indepth ship details");
+            DetailsButton.Title = MyStringId.GetOrCompute("所选网格详情");
+            DetailsButton.Tooltip = MyStringId.GetOrCompute("深入提供飞船详情");
             DetailsButton.SupportsMultipleBlocks = false;
             DetailsButton.Action = Block => ModCore.ShipDetails(block);
             DetailsButton.Enabled = Block => ModCore.PreviewButtonVisibility(block);
@@ -84,8 +84,8 @@ namespace HangarStoreMod
 
 
             var PurchaseButton = MyAPIGateway.TerminalControls.CreateControl<IMyTerminalControlButton, IMyProjector>("PurchaseButton");
-            PurchaseButton.Title = MyStringId.GetOrCompute("Purchase Slected Grid");
-            PurchaseButton.Tooltip = MyStringId.GetOrCompute("Purchases the selected grid");
+            PurchaseButton.Title = MyStringId.GetOrCompute("购买所选网格");
+            PurchaseButton.Tooltip = MyStringId.GetOrCompute("购买所选网格");
             PurchaseButton.SupportsMultipleBlocks = false;
 
             PurchaseButton.Action = Block => ModCore.PurchaseSlectedGrid(Block);

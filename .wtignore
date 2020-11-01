@@ -2,3 +2,5 @@
 .idea
 .gitignore
 *.md
+/Data/Scripts/HangarStoreMod/bin
+/Data/Scripts/HangarStoreMod/obj
